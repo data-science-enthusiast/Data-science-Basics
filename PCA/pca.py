@@ -1,6 +1,5 @@
 '''
-Suppose we   are   interested   in   reducing   the   five-dimensional   records   to   two   dimensions  
-by   means of   the   principal   component   analysis.
+Reducing   the   five-dimensional   records   to   two   dimensions  by   means of   the   principal   component   analysis.
  
  Steps   for   PCA:
 1. Standardization   the   data   X.
