@@ -48,3 +48,4 @@ plt.scatter(y1,   y2)
 plt.title( "Data   using   first   two   Eigen   Vectors." ) plt.xlabel( 'PCA   variable   1' )
 plt.ylabel( 'PCA   Variable   2' )
 plt.show()
+
