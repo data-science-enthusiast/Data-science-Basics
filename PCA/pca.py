@@ -14,7 +14,7 @@ import    numpy    as    np
 import    matplotlib.pyplot    as    plt
 from    sklearn.preprocessing    import    StandardScaler
 data   =   pd.read_csv(
-             filepath_or_buffer = 'data_que3.csv' ,              header = None ,
+             filepath_or_buffer = 'data.csv' ,              header = None ,
              sep = ',' )
 data.dropna( how = "all" ,    inplace = True ) data.tail()
 X   =   data.ix[:,    0 : 5 ].values
