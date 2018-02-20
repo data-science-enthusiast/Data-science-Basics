@@ -51,7 +51,6 @@ plt.show()
 
 #Reconstructing   the   original   data   and   computing   the   reconstruction   error.          
 
-CSE   5810-   ASSIGNMENT   1
 from    sklearn.decomposition    import    PCA
 from    sklearn.metrics    import    mean_squared_error
 pca   =   PCA( n_components = 2 )
