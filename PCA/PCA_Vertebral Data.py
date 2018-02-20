@@ -5,7 +5,7 @@ import    numpy    as    np
 import    matplotlib.pyplot    as    plt
 from    sklearn.preprocessing    import    StandardScaler
 data   =   pd.read_csv(
-             filepath_or_buffer = 'column_2C_weka   -Vertebral.csv' ,
+             filepath_or_buffer = 'Vertebral.csv' ,
              header = None ,
              sep = ',' )
 data.columns   =   [ 'pelvic_incidence' ,    'pelvic_tilt' ,    'lumbar_lordosis_angle' , 'sacral_slope' ,    'pelvic_radius' ,
