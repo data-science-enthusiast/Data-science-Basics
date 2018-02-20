@@ -49,3 +49,15 @@ plt.title( "Data   using   first   two   Eigen   Vectors." ) plt.xlabel( 'PCA   
 plt.ylabel( 'PCA   Variable   2' )
 plt.show()
 
+#Reconstructing   the   original   data   and   computing   the   reconstruction   error.          
+
+CSE   5810-   ASSIGNMENT   1
+from    sklearn.decomposition    import    PCA
+from    sklearn.metrics    import    mean_squared_error
+pca   =   PCA( n_components = 2 )
+pca.fit(X_std)
+data_reduced   =   np.dot(X_std,   pca.components_.T)    #   transform
+data_original   =   np.dot(data_reduced,   pca.components_)    #   inverse_transform print ( 'Reduced   Reconstruction: \n %s' %   data_reduced)
+print ( 'Original   normalised   Data: \n %s' %   X_std)
+print ( 'Reconstructed   Data   from   PCA   components: \n %s' %   data_original) m_error=mean_squared_error(X_std,data_original)
+print ( "Error:" ,m_error)
