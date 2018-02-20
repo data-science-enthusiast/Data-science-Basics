@@ -11,11 +11,10 @@ data   =   pd.read_csv(
 data.columns   =   [ 'pelvic_incidence' ,    'pelvic_tilt' ,    'lumbar_lordosis_angle' , 'sacral_slope' ,    'pelvic_radius' ,
                                                  'degree_spondylolisthesis' ,    'class' ] data.dropna( how = "all" ,    inplace = True )
 data.tail()
-X   =   data.ix[:,    0 : 6 ]. 
-y   =   data.ix[:,    6 ]. 
-CSE   5810-   ASSIGNMENT   1
- values
- values
+X   =   data.ix[:,    0 : 6 ].  values
+y   =   data.ix[:,    6 ].  values
+
+
 #   Normalization
 X_std   =   StandardScaler().fit_transform(X) orig   =   X_std
 cov_mat   =   np.cov(X_std.T) print ( 'Covariance   matrix    \n %s'    %   cov_mat)
